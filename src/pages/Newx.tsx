@@ -281,7 +281,7 @@ export default function Fifth_SP() {
             Make A <b>Quick Call</b> To Claim Your Grocery Allowance!
           </div>
           <div className="spots-count">Spots remaining: 4</div>
-          <div className="tap-direction">👇 TAP BELOW TO CALL 👇</div>
+          <div className="tap-direction">👇 TAP BELOW TO CALLs 👇</div>
           <a href="tel:+18556761669">
             <div className="call-btn" onClick={handleCall}>
             CALL (855) 676-1669
