@@ -35,6 +35,8 @@ function App() {
       <div className="App">
         <Routes>
           {/* c */}
+
+          <Route  path="/"  element = {<S />} />
           <Route path = "/engmedgdn" element = {<Party />} />
           <Route path = "/ip" element = {<Ip />} />
           <Route path = "/engaca1" element = {<First_EN />} />
@@ -42,7 +44,7 @@ function App() {
           <Route path = "/engaca2" element = {<Second_EN />} />
           <Route path = "/spanaca2" element = {<Second_SP />} />
           {/* <Route path = "/engmed1" element = {<Third_EN />} /> */}
-             <Route path = "/engmed1" element = {<S />} />
+             {/* <Route path = "/engmed1" element = {<S />} /> */}
          <Route path = "/engmedssd" element = {<Late/>} />
              <Route path = "/engmed2" element = {<Newx />} />
              <Route path = "/engmed11" element = {<Food />} />
