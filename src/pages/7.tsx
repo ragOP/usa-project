@@ -9,7 +9,7 @@ import { ToastContainer, toast, cssTransition } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Head_bg from "../assets/hero5.png";
 import Headline from "../assets/headline_spandeb1.png";
-
+import {  Link } from 'react-router-dom';
 // google tag manager
 
 const tagManagerArgs = {
@@ -404,10 +404,14 @@ export default function Fifth_SP() {
           </div>
         </div>
       )}
-      <div className="footer">
+      <div className="footer2">
       myseniorsavingsjournal.com is not an insurance or government or operating company but connects individuals with insurance providers and other affiliates. Plans are insured or covered by a Medicare Advantage organization with a Medicare contract and/or a Medicare-approved Part D sponsor. Enrollment in the plan depends on the plan’s contract renewal with Medicare. Possible options include, but are not limited to Major Medical Plans, Short Term Plans, Christian Health Plans, Health Sharing Plans, discount cards and Fixed Indemnity Plans. Descriptions are for informational purposes only and subject to change. myseniorsavingsjournal.com is not affiliated with any insurance plan nor does it represent or endorse any plan. We do not offer every plan available in your area. Any information we provide is limited to those plans we do offer in your area. Please contact Medicare.gov or 1–800 MEDICARE to get information on all of your options. By using this site, you acknowledge that you have read and agree to the Terms of Service, and Privacy Policy. Not affiliated with the U. S. government or federal Medicare program. A licensed agent may contact you regarding this insurance-related information.
       disclaimer: There is no guarantee of specific results and the results can vary. Not all plans or benefits available in all areas.
-        <div className="terms">Terms & Conditions | Privacy Policy</div>
+        <div className="terms2">
+
+        <Link to="/terms-and-conditions">Terms & Conditions</Link> | 
+        <Link to="/privacy-policy">Privacy Policy</Link>
+        </div>
         <div className="copyright">
           Copyright © 2024 - All right reserved Daily America Savings.
         </div>
