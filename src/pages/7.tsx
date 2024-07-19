@@ -352,7 +352,7 @@ export default function Fifth_SP() {
               {/* <img className='topic-img-larger' src = {Headline} alt = "head"/> */}
               <img className="topic-img-middle-z" src={Head_bg} alt="head" />
               <div  style={{marginTop:'14px'}}className="main-des-5">
-              Americans over 65 years old may be eligible to claim the 2024 Grocery Allowance Card that gives them up to $3600. Americans may use the funds to fully cover their Groceries, Medicines, etc.
+              Americans over 65 years old may be eligible to claim the 2024 Grocery Allowance Card that gives them up to $3600.Americans may use the funds to fully cover their Groceries, Medicines, etc.
 
               </div>
               <div className="main-des-5"  style={{marginTop:'-5px'}}>
@@ -413,7 +413,7 @@ export default function Fifth_SP() {
         <Link to="/privacy-policy">Privacy Policy</Link>
         </div>
         <div className="copyright">
-          Copyright © 2024 - All right reserved Daily America Savings.
+          Copyright © 2024 - Owned & Operated By Click Ventures LLC
         </div>
         {/* <p>{zipCode} </p> */}
       </div>
