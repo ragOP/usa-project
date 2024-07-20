@@ -123,7 +123,7 @@ export default function Fifth_SP() {
   //   fetchUserLocation();
   // }, []);
   useEffect(() => {
-    window.document.title = "Senior's Allowance Program 2024";
+    window.document.title = "Seniors Saving Journal";
 
     axios
       .get(process.env.REACT_APP_PROXY + `/visits/8`)
@@ -338,7 +338,7 @@ export default function Fifth_SP() {
     <div>
      {/* <ToastContainer /> */}
       <div style={{marginBottom:'4px'}} className="top-sticky-blue-test2" id="top">
-      Senior's Allowance Program 2024
+      Seniors Saving Journal
       </div>
       {step === "process" ? (
         <>
@@ -346,14 +346,14 @@ export default function Fifth_SP() {
             <div className="main-descrition-5-5">
               <div className="main-des-title-6-7">
                 <b>
-                Americans Over 65 May Qualify For The $3600 Grocery Allowance in 2024!
+                Older Americans May Be Eligible For New Benefits. Click Below To Check Eligibility.
                 </b>
               </div>
               {/* <img className='topic-img-larger' src = {Headline} alt = "head"/> */}
               <img className="topic-img-middle-z" src={Head_bg} alt="head" />
               <div  style={{marginTop:'14px'}}className="main-des-5">
-              Americans over 65 years old may be eligible to claim the 2024 Grocery Allowance Card that gives them up to $3600.Americans may use the funds to fully cover their Groceries, Medicines, etc.
-
+              {/* Americans over 65 years old may be eligible to claim the 2024 Grocery Allowance Card Americans may use the funds to fully cover their Groceries, Medicines, etc. */}
+              <b>How it works:</b> Complete this 60 second survey to check your eligibility. Hurry and claim your benefits!
               </div>
               <div className="main-des-5"  style={{marginTop:'-5px'}}>
               {/* If you have not yet claimed your monthly allowance then answer the questions below and once approved <b>you will have your $3,600 Grocery Allowance mailed to you within a few days ready for use!</b> */}
