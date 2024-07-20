@@ -195,12 +195,13 @@ export default function Fifth_SP() {
     });
   };
 
-  const [quiz, setQuiz] = useState("Are you over the age of 64?  ");
+  const [quiz, setQuiz] = useState("Select Your Age:  ");
   const [step, setStep] = useState("process");
   const [min, setMin] = useState(3);
   const [second, setSecond] = useState<any>(0);
-  const [yes,setYes]=useState("YES, I'M 65 OR OLDER")
-  const [no,setNo]=useState("NO, I'M 64 OR YOUNGER")
+  const [yes,setYes]=useState("55-64")
+  const [no,setNo]=useState("65-74")
+  const [third,setThird]=useState("75+")
   
 
   const stepProcess = () => {
@@ -266,10 +267,12 @@ export default function Fifth_SP() {
 
   const handleQuizP = () => {
     topScroll("btn");
-    if (quiz === "Are you over the age of 64?  ") {
+    if (quiz === "Select Your Age:  ") {
       setYes("Yes")
       setNo("No")
-      setQuiz("2. Do you live in the United States?");
+      setThird("Yes")
+      
+      setQuiz("Are you on Medicare Parts A & B?");
     } else {
       setStep("Reviewing Your Answers...");
      
@@ -304,7 +307,7 @@ export default function Fifth_SP() {
     if (quiz === "Are you over the age of 60?  ") {
       setYes("Yes")
       setNo("No")
-      setQuiz("2. Do you live in the United States?");
+      setQuiz("Are you on Medicare Parts A & B?");
     } else {
       setStep("Reviewing Your Answers...");
     
@@ -371,6 +374,9 @@ export default function Fifth_SP() {
                 <div className="answer-btn-5" onClick={handleQuizN}>
               {no}
                 </div>
+               {quiz === "Select Your Age:  " && <div className="answer-btn-5" onClick={handleQuizN}>
+              {third}
+                </div>}
               </div>
             </div>
           </div>
@@ -381,11 +387,11 @@ export default function Fifth_SP() {
         </div>
       ) : (
         <div className="checking">
-          <div className="congrats">Congratulation, You Qualify!</div>
+          <div className="congrats">Congratulation!</div>
           <div className="top-description-5">
-            Make A <b>Quick Call</b> To Claim Your Grocery Allowance!
+          You Might Pre-Qualify for the Healthy Allowance.
           </div>
-          <div className="spots-count">Spots remaining: 4</div>
+          {/* <div className="spots-count">Spots remaining: 4</div> */}
           <div className="tap-direction">👇 TAP BELOW TO CALL 👇</div>
           <a href="tel:+18446720874">
             <div className="call-btn" onClick={handleCall}>
@@ -394,8 +400,7 @@ export default function Fifth_SP() {
           </a>
           <div className="sub-title">We Have Reserved Your Spot</div>
           <div className="sub-description">
-            Due to high call volume, your official agent is waiting for only{" "}
-            <b>3 minutes</b>, then your spot will not be reserved.
+          Your spot is reserved so call within the next 5 minutes.
           </div>
           <div className="timer">
             <div className="timer-cell">{min}</div>
