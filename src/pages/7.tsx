@@ -307,6 +307,7 @@ export default function Fifth_SP() {
     if (quiz === "Are you over the age of 60?  ") {
       setYes("Yes")
       setNo("No")
+      setThird("Yes")
       setQuiz("Are you on Medicare Parts A & B?");
     } else {
       setStep("Reviewing Your Answers...");
@@ -398,15 +399,15 @@ export default function Fifth_SP() {
             CALL (844) 672-0874
             </div>
           </a>
-          <div className="sub-title">We Have Reserved Your Spot</div>
+          {/* <div className="sub-title">We Have Reserved Your Spot</div> */}
           <div className="sub-description">
-          Your spot is reserved so call within the next 5 minutes.
+          {/* Your spot is reserved so call within the next 5 minutes. */}
           </div>
-          <div className="timer">
+          {/* <div className="timer">
             <div className="timer-cell">{min}</div>
             <div className="timer-cell">:</div>
             <div className="timer-cell">{second}</div>
-          </div>
+          </div> */}
         </div>
       )}
       <div className="footer2">
