@@ -419,6 +419,7 @@ export default function Fifth_SP() {
         <Link to="/privacy-policy">Privacy Policy</Link>
         </div>
         <div className="copyright">
+        This site is made to market health insurance under “Jessica Johanna Rodriguez”
           Copyright © 2024 - Owned & Operated By Click Ventures LLC
         </div>
         {/* <p>{zipCode} </p> */}
