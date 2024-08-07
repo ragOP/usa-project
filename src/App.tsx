@@ -36,7 +36,7 @@ function App() {
         <Routes>
           {/* c */}
 
-          <Route  path="/"  element = {<S />} />
+{/*           <Route  path="/"  element = {<S />} /> */}
 {/*           <Route path = "/engmedgdn" element = {<Party />} /> */}
 {/*           <Route path = "/ip" element = {<Ip />} /> */}
           // <Route path = "/engaca1" element = {<First_EN />} />
