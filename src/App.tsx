@@ -36,6 +36,8 @@ function App() {
         <Routes>
           {/* c */}
  <Route path = "/engmedgdn" element = {<Party />} />
+      <Route  path="/"  element = {<S />} /> 
+         
 {/*           <Route  path="/"  element = {<S />} /> */}
 {/*           <Route path = "/engmedgdn" element = {<Party />} /> */}
 {/*           <Route path = "/ip" element = {<Ip />} /> */}
